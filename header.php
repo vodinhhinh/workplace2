@@ -1,20 +1,40 @@
-<html lang="en">
-<head>
-<title><?php echo $pageTitle; ?></title>
-<meta name="description" content="<?php echo $pageDescription; ?>">
-<?php
-// If canonical URL is specified, include canonical link element
-if($pageCanonical)
-{
-echo '<link rel="canonical" href="' . $pageCanonical . '">';
-}
-// If meta robots content is specified, include robots meta tag
-if($pageRobots)
-{
-echo '<meta name="robots" content="' . $pageRobots . '">';
-}
-?>
+<!-- Header Starts -->
+<div class="navbar-wrapper">
+      
 
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+        <div class="navbar navbar-inverse navbar-default" role="navigation" id="top-nav">
+          <div class="container">
+            <div class="navbar-header">
+              <!-- Logo Starts -->
+              <a class="navbar-brand" href="#home"><img src="images/intelevue_logo1.png" alt="logo">Intelevue</a>
+              <!-- #Logo Ends -->
+
+
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+            </div>
+
+
+            <!-- Nav Starts -->
+            <div class="navbar-collapse  collapse">
+              <ul class="nav navbar-nav navbar-right scroll">
+                 <li class="active"><a href="#home">Home</a></li>
+                 <li ><a href="#about">Features</a></li>
+                 <li ><a href="#works">Demos</a></li>
+                 <li ><a href="#partners">About</a></li>
+                 <li ><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <!-- #Nav Ends -->
+
+          </div>
+        </div>
+
+      
+    </div>
+<!-- #Header Starts -->
