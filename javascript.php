@@ -5,6 +5,9 @@
 <script src="assets/wow/wow.min.js"></script>
 
 
+<!-- quickstand script -->
+<script src="assets/quickstand/quickstand.js"></script>
+
 <!-- boostrap -->
 <script src="assets/bootstrap/js/bootstrap.js" type="text/javascript" ></script>
 
