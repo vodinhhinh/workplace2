@@ -191,23 +191,43 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 	z-index: 2;
 }
 
+.controlDemos ul li{width: 10em;height: 10em;border: 1px solid #ccc;padding: 0;border-radius: 50%;margin: 0 1.25em;line-height: 13.5em;color: #999;}
+.controlDemos ul li span{line-height: 2em;display: inline-block;font-weight: 300;}
+.controlDemos ul li span i{font-size: 3em;}
+.controlDemos ul li span b{display: block;font-size: 1em;font-weight: 300;}
+
+.sortBy ul li{width: 2em;height: 2em;border: 1px solid #ccc;padding: 0;border-radius: 50%;margin: 0 1.25em;ssline-height: 13.5em;color: #999;}
+.sortBy ul li span{line-height: 2em;display: inline-block;font-weight: 100;}
+.sortBy ul li span i{font-size: 1em;}
+.sortBy ul li span b{display: block;font-size: 0.7em;font-weight: 300;}
+
+
+/* Common style */
+.image-grid{
+	padding: 0px 0px 0px 0px;
+	height:auto;
+}
 .image-grid li {
-    //width: 128px;
-    margin: 20px 0 0 35px;
+    width: 33.3333%;
+    //margin: 20px 0 0 35px;
+	padding :5px;
     float: left;
     text-align: center;
     font-family: "Helvetica Neue",sans-serif;
     line-height: 17px;
     color: #686f74;
-   // height: 177px;
+    //height: 177px;
     overflow: hidden;
+	
 }
+
 .image-grid figure {
     position: relative;
     float: left;
     overflow: hidden;
-    margin: 0;
+    margin: 0; /*change here for spacing*/	
     /* width: 33.333333333%; */
+	width: 100%;
     text-align: center;
     cursor: pointer;
 }
@@ -219,4 +239,72 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
     height: 100%;
 }
 
+.image-grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.image-grid figure figcaption::before,
+.image-grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.image-grid figure figcaption,
+.image-grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.image-grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.image-grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 700;
+}
+
+.image-grid figure h2,
+.image-grid figure p {
+	margin: 0;
+}
+
+.image-grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+.image-grid figure p.btnPlay {	
+	font-size: 4em;
+	margin: -15px;
+}
+.image-grid figure p i:hover {	
+	color:#2d6aff;
+}
+
+
+@media screen and (max-width: 50em) {
+	
+	.image-grid li {
+		width: 50%;
+	}
+}
+
+
+@media (max-width: 639px) {
+	.image-grid li {width: 100%;}
+}
 

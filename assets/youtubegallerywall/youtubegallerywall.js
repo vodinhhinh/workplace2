@@ -3,18 +3,18 @@
 //** Created: April 12, 2016
 //** Last modified: April 15th, 16 v1.1 to fix iOS devices sometimes not loading videos
 
-var youtubeapidfd = $.Deferred()
+//var youtubeapidfd = $.Deferred()
 
 // define onYouTubeIframeAPIReady() function
 function onYouTubeIframeAPIReady(){
-	youtubeapidfd.resolve()
+	//youtubeapidfd.resolve()
 }
 	
 ;(function($){
 
 	var KEYCODE_ESC = 27
 
-	var thumbnailformat = 'http://img.youtube.com/vi/VIDEOID/0.jpg'
+	var thumbnailformat = 'http://img.youtube.com/vi/VIDEOID/mqdefault.jpg'
 
 	var ytubelightbox = 
 		'<div class="videobox">'
@@ -46,6 +46,7 @@ function onYouTubeIframeAPIReady(){
 	}
 
 	function createlightbox(){
+		
 		$videobox = $(ytubelightbox).appendTo(document.body)
 
 		// Hide lightbox when clicked on
@@ -77,15 +78,17 @@ function onYouTubeIframeAPIReady(){
 	var firstScriptTag = document.getElementsByTagName('script')[0]
 	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag)
 
-	youtubeapidfd.then(function(){
+	//youtubeapidfd.then(function(){
+
 		createlightbox()
+		
 		$(document).on('keyup', function(e){
 			if (typeof $videobox != 'undefined'){
 				if (e.keyCode == KEYCODE_ESC)
 					hidelightbox()
 			}
 		})
-	})
+	//})
 
 	
 	// Creates a new YT.Player() instance
@@ -98,7 +101,7 @@ function onYouTubeIframeAPIReady(){
 
 	jQuery.fn.youtubegallery = function(options){
 		var s = $.extend({}, defaults, options)
-		return this.each(function(){ //return jQuery obj
+		/*return this.each(function(){ //return jQuery obj
 			var $ul = $(this)
 			$ul.addClass('youtubewall')
 			var $lis = $ul.find('li')
@@ -108,9 +111,9 @@ function onYouTubeIframeAPIReady(){
 				var videoid = getyoutubeid(link.getAttribute('href'))
 				var thumbnail = thumbnailformat.replace('VIDEOID', videoid)
 				var doclink = link.getAttribute('data-url')
-				if (ismobile){
+				if (ismobile){*/
 					/* iOS :hover fix: http://stackoverflow.com/questions/18047353/fix-css-hover-on-iphone-ipad-ipod */
-					$li.css({cursor: 'pointer'})
+					/*$li.css({cursor: 'pointer'})
 				}
 				$li.html(
 					'<div class="thumbwrap">'
@@ -139,7 +142,39 @@ function onYouTubeIframeAPIReady(){
 					}
 				})
 			})
-		}) //end return this.each
+		}) //end return this.each */
+		//find child liTube.find('a').length != 0
+		return this.each(function(){ //return jQuery obj
+			var divTube = $(this);
+			var liTubes = divTube.find('li');
+			liTubes.each(function (i){
+				var liTube = $(this);
+				var linkTube = liTube.find('a').get(0);
+				var videoid = getyoutubeid(linkTube.getAttribute("href"));
+				var thumbnail = thumbnailformat.replace('VIDEOID', videoid);
+				if(liTube.find('img').length == 0){
+					liTube.children().prepend('<img src="' + thumbnail + '" width="100%"/>');
+				}
+				//liTube.find(".btnPlay").html('<i class="play fa fa-play-circle-o"></i>');
+				liTube.find('.play').on('click', function(){
+					console.log(typeof $videobox);
+					if (typeof $videobox != 'undefined'){
+						showlightbox();
+						if (typeof youtubeplayer == 'undefined'){
+							createyoutubeplayer(videoid, 'videoplayer')
+						}
+						else{
+							if (isiOS){
+								youtubeplayer.cueVideoById(videoid)
+							}
+							else{
+								youtubeplayer.loadVideoById(videoid)
+							}
+						}
+					}
+				});
+			});
+		}); //end return this.each
 	}
 
 

@@ -1,2 +1,2 @@
-Lime RGB 76 255 0
-Blue RGB 45 106 255
+Lime RGB 76 255 0  #4cff00
+Blue RGB 45 106 255  #2d6aff

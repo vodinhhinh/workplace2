@@ -6,8 +6,13 @@ $('document').ready(function() {
 	$('#youtube-video').tubular(options);
 	// f-UGhWj1xww cool sepia hd
 	// 49SKbS7Xwf4 beautiful barn sepia
-
-		 // bind radiobuttons in the form
+	$('#youtubelist').youtubegallery();
+	
+	
+	
+	
+	
+ // bind radiobuttons in the form
   var $filterType = $('#filter input[name="type"]');
   var $filterSort = $('#filter input[name="sort"]');
 	
@@ -29,15 +34,16 @@ $('document').ready(function() {
     // if sorted by size
     if ($('#filter input[name="sort"]:checked').val() == "size") {
       var $sortedData = $filteredData.sorted({
+		reversed: true,
         by: function(v) {
-          return parseFloat($(v).find('span[data-type=size]').text());
+          return $(v).find('p[data-type=date]').text();
         }
       });
     } else {
       // if sorted by name
       var $sortedData = $filteredData.sorted({
         by: function(v) {
-          return $(v).find('strong').text().toLowerCase();
+          return $(v).find('h2').text().toLowerCase();
         }
       });
     }   
@@ -46,9 +52,14 @@ $('document').ready(function() {
     $applications.quicksand($sortedData, {
       duration: 800,
       //easing: 'easeInOutQuad'
-    });
-
+    },function() {
+		// callback code
+		// reload youtubeplugin
+		$('#youtubelist').youtubegallery();
+	});
   });
+  
+  
 });
 
 // Custom sorting plugin
@@ -74,9 +85,3 @@ $('document').ready(function() {
   };
 })(jQuery);
 
-// DOMContentLoaded
-$(function() {
-
- 
-
-});

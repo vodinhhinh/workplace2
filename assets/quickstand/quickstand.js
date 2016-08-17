@@ -157,7 +157,7 @@ Github site: http://github.com/razorjack/quicksand
               $sourceParent.css('height', destHeight);
             }
             if (adjustWidthOnCallback) {
-              $sourceParent.css('width', sourceWidth);
+              //$sourceParent.css('width', sourceWidth);
             }
           }
           options.enhancement($sourceParent); // Perform custom visual enhancements on a newly replaced collection
@@ -171,7 +171,7 @@ Github site: http://github.com/razorjack/quicksand
         }
 
         if (false === options.adjustWidth) {
-          $sourceParent.css('width', 'auto');
+          //$sourceParent.css('width', 'auto');
         }
       };
 
@@ -203,7 +203,7 @@ Github site: http://github.com/razorjack/quicksand
 
       // keeps nodes after source container, holding their position
       $sourceParent.css('height', $(this).height());
-      $sourceParent.css('width', $(this).width());
+      //$sourceParent.css('width', $(this).width());
 
       // get positions of source collections
       $source.each(function(i) {
@@ -229,7 +229,7 @@ Github site: http://github.com/razorjack/quicksand
         rawObj.style.margin = '0';
 
         if (!options.adjustWidth) {
-          rawObj.style.width = (width + 'px'); // sets the width to the current element
+          //rawObj.style.width = (width + 'px'); // sets the width to the current element
           // with even if it has been changed
           // by a responsive design
         }
@@ -280,15 +280,15 @@ Github site: http://github.com/razorjack/quicksand
       if (options.adjustWidth === 'dynamic') {
         // If destination container has different width than source container the width can be animated, 
         // adjusting it to destination width
-        $sourceParent.animate({ width : $dest.width() }, options.duration, options.easing);
+        //$sourceParent.animate({ width : $dest.width() }, options.duration, options.easing);
       } else if (options.adjustWidth === 'auto') {
         destWidth = $dest.width();
         if (parseFloat(sourceWidth) < parseFloat(destWidth)) {
           // Adjust the height now so that the items don't move out of the container
-          $sourceParent.css('width', destWidth);
+         // $sourceParent.css('width', destWidth);
         } else {
           // Adjust later, on callback
-          adjustWidthOnCallback = true;
+         // adjustWidthOnCallback = true;
         }
       }
 

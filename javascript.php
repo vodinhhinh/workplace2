@@ -4,6 +4,8 @@
 <!-- wow script -->
 <script src="assets/wow/wow.min.js"></script>
 
+<!-- youtubegallerywall script -->
+<script src="assets/youtubegallerywall/youtubegallerywall.js"></script>
 
 <!-- quickstand script -->
 <script src="assets/quickstand/quickstand.js"></script>

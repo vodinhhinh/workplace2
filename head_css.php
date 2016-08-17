@@ -20,6 +20,9 @@
 <!-- gallery -->
 <link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
 
+<!-- youtubegallerywall -->
+<link rel="stylesheet" href="assets/youtubegallerywall/youtubegallerywallredo.css">
+
 <!-- favicon -->
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
