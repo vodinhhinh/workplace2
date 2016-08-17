@@ -84,7 +84,7 @@
 	<div class="sortBy">
 		<ul class="text-center list-inline  wowload bounceInUp">
 			<li>
-				<span><b>Date</b></span>
+				<span><b>Date1</b></span>
 			</li>
 			<li>
 				<span><b>Name</b></span>
