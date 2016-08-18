@@ -1,6 +1,6 @@
 <div id="demos">
 <!-- Slider Starts -->
-<div id="myCarousel" class="carousel slide banner-slider wowload bounceInUp" data-wow-delay=" 0.5s" data-ride="carousel">   
+<div id="myCarousel" class="clearfix carousel slide banner-slider wowload fadeIn" data-wow-delay=" 0.5s" data-ride="carousel">   
       <div class="carousel-inner">
         <!-- Item 1 -->
         <div class="item active">
@@ -61,11 +61,11 @@
 
 
 
-<div id="demosList" class="">
+<div id="demosList">
 	<h3 class="text-center wowload fadeInUp">Demo Videos</h3>
-	<div class="controlDemos">
-		<ul class="text-center list-inline  wowload bounceInUp">
-			<li>
+	<div  class="controlDemos">
+		<ul id="filterVideo" class="text-center list-inline  wowload bounceInUp">
+			<li class="active">
 				<span data-type="all"><i class="fa fa-camera-retro"></i><b>All</b></span>
 			</li>
 			<li>
@@ -80,37 +80,11 @@
 			
 		</ul>
 	</div>
-	<!--<h5 class="text-center wowload bounceInUp">Sort by</h5>
-	<div class="sortBy">
-		<ul class="text-center list-inline  wowload bounceInUp">
-			<li>
-				<span><b>Date1</b></span>
-			</li>
-			<li>
-				<span><b>Name</b></span>
-			</li>
-		</ul>
-	</div> -->
 </div>
 
-
-<form id="filter">
-  <fieldset>
-    <legend>Filter by type</legend>
-    <label><input type="radio" name="type" value="all" checked="checked">All</label>
-    <label><input type="radio" name="type" value="app">Guides</label>
-    <label><input type="radio" name="type" value="util">Others</label>
-  </fieldset>
-  <fieldset>
-    <legend>Sort by</legend>
-    <label><input type="radio" name="sort" value="size" checked="checked">Date</label>
-    <label><input type="radio" name="sort" value="name">Name</label>      
-  </fieldset>
-</form>
-
-<div id="youtubelist">
+<div id="youtubelist" >
 <ul id="applications" class="clearfix image-grid">
-  <li data-id="id-1" data-type="util">
+  <li data-id="id-1" data-type="guides">
 	<figure class="effect-oscar">
         <figcaption>
             <h2>Pikachu</h2>						
@@ -121,7 +95,7 @@
         </figcaption>
     </figure>
   </li>
-  <li data-id="id-2" data-type="app">
+  <li data-id="id-2" data-type="overview">
 	<figure class="effect-oscar">
         <figcaption>
             <h2>Nature</h2>
@@ -132,7 +106,7 @@
         </figcaption>
     </figure>    
   </li>
-  <li data-id="id-3" data-type="app">
+  <li data-id="id-3" data-type="others">
 	<figure class="effect-oscar">
         <figcaption>
             <h2>Universe</h2>
@@ -143,7 +117,7 @@
         </figcaption>
     </figure>
   </li>
-  <li data-id="id-4" data-type="app">
+  <li data-id="id-4" data-type="others">
 	<figure class="effect-oscar">
         
         <figcaption>
@@ -155,7 +129,7 @@
         </figcaption>
     </figure>
   </li>
-  <li data-id="id-5" data-type="app">
+  <li data-id="id-5" data-type="overview">
 	<figure class="effect-oscar"> 
         <figcaption>
             <h2>Fail</h2>
@@ -166,7 +140,7 @@
         </figcaption>
     </figure>
   </li>
-  <li data-id="id-6" data-type="app">
+  <li data-id="id-6" data-type="guides">
 	<figure class="effect-oscar">  
         <figcaption>
             <h2>River</h2>

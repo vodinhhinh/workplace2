@@ -1,3 +1,4 @@
+<div id="top-page"></div>
 <!-- Header Starts -->
 <div class="navbar-wrapper">
       
@@ -23,10 +24,10 @@
             <!-- Nav Starts -->
             <div class="navbar-collapse  collapse">
               <ul class="nav navbar-nav navbar-right scroll">
-                 <li class="active"><a href="#home">Home</a></li>
+                 <li class="active"><a href="#top-page">Home</a></li>
                  <li ><a href="#features">Features</a></li>
                  <li ><a href="#demos">Demos</a></li>
-                 <li ><a href="#partners">About</a></li>
+                 <li ><a href="#about">About</a></li>
                  <li ><a href="#contact">Contact</a></li>
               </ul>
             </div>

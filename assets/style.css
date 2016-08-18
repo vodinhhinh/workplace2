@@ -119,7 +119,10 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 	figure.effect-chico figcaption {padding: 2em;}	
 	figure.effect-oscar figcaption {padding: 20%;}
 	figure.effect-chico figcaption::before{top: 10px;right: 10px;bottom: 10px;left: 10px;}
-	.grid figure.effect-chico p{font-size: 0.6em;line-height: 1.5em;}	
+	.grid figure.effect-chico p{font-size: 0.6em;line-height: 1.5em;}
+	
+	.carousel-overlay h1 {font: 700 1em Roboto,Arial,Helvetica;}
+	.carousel-overlay a.btn-lg {font-size: 12px;line-height: 1.5;}
 }
 
 
@@ -164,6 +167,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 /*section1-video*/
 #video-section{
 	overflow:hidden;
+	background-image: url("../images/bgvideo.png");
 }
 
 /*section1-video*/
@@ -187,14 +191,33 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 	text-align: center;
 	background: rgba(0,0,0,0.4);
 }
+.carousel-overlay ul{
+	padding: 0;
+}
 .carousel-control{
 	z-index: 2;
 }
 
-.controlDemos ul li{width: 10em;height: 10em;border: 1px solid #ccc;padding: 0;border-radius: 50%;margin: 0 1.25em;line-height: 13.5em;color: #999;}
+#demosList{
+	margin: 0 0 50px 0;
+}
+.controlDemos ul li{cursor:pointer;width: 10em;height: 10em;border: 2px solid #ccc;padding: 0;border-radius: 50%;margin: 0 1.25em;line-height: 13.5em;color: #999;}
 .controlDemos ul li span{line-height: 2em;display: inline-block;font-weight: 300;}
 .controlDemos ul li span i{font-size: 3em;}
 .controlDemos ul li span b{display: block;font-size: 1em;font-weight: 300;}
+
+.controlDemos ul li.active{
+	color: #4cff00;
+	//background-color: #4cff00;
+	//border: 2px solid #4cff00;
+}
+.controlDemos ul li:hover{
+	color: #2d6aff;
+	//background-color: white;
+	//border: 2px solid #2d6aff;
+}
+
+
 
 .sortBy ul li{width: 2em;height: 2em;border: 1px solid #ccc;padding: 0;border-radius: 50%;margin: 0 1.25em;ssline-height: 13.5em;color: #999;}
 .sortBy ul li span{line-height: 2em;display: inline-block;font-weight: 100;}
@@ -306,5 +329,12 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 
 @media (max-width: 639px) {
 	.image-grid li {width: 100%;}
+}
+
+
+.about_info{
+	background-image: url(../images/about.jpg);
+	background-size: cover;
+	color: white;
 }
 

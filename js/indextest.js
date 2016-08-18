@@ -1,7 +1,7 @@
 $('document').ready(function() {
 	
 	var winHeight = $(window).height();
-	$('#video-section').height(winHeight -70);
+	$('#youtube-video').height(winHeight -70);
 	var options = { videoId: 'rPmGtZAUxNs', start: 0 };
 	$('#youtube-video').tubular(options);
 	// f-UGhWj1xww cool sepia hd
@@ -10,55 +10,39 @@ $('document').ready(function() {
 	
 	
 	
-	
-	
- // bind radiobuttons in the form
-  var $filterType = $('#filter input[name="type"]');
-  var $filterSort = $('#filter input[name="sort"]');
-	
-  // get the first collection
-  var $applications = $('#applications');
+		
+		
+	// get the first collection
+	var $applications = $('#applications');
 
-  // clone applications to get a second collection
-  var $data = $applications.clone();
+	// clone applications to get a second collection
+	var $data = $applications.clone();
 
-  // attempt to call Quicksand on every form change
-  $filterType.add($filterSort).change(function(e) {
-	  console.log($('#filter input[name="type"]:checked'));
-    if ($('#filter input[name="type"]:checked').val() == 'all') {
-      var $filteredData = $data.find('li');
-    } else {
-      var $filteredData = $data.find('li[data-type=' + $('#filter input[name="type"]:checked').val() + ']');
-    }
-
-    // if sorted by size
-    if ($('#filter input[name="sort"]:checked').val() == "size") {
-      var $sortedData = $filteredData.sorted({
-		reversed: true,
-        by: function(v) {
-          return $(v).find('p[data-type=date]').text();
-        }
-      });
-    } else {
-      // if sorted by name
-      var $sortedData = $filteredData.sorted({
-        by: function(v) {
-          return $(v).find('h2').text().toLowerCase();
-        }
-      });
-    }   
-
-    // finally, call quicksand
-    $applications.quicksand($sortedData, {
-      duration: 800,
-      //easing: 'easeInOutQuad'
-    },function() {
-		// callback code
-		// reload youtubeplugin
-		$('#youtubelist').youtubegallery();
-	});
-  });
   
+	 // attempt to call Quicksand on every form change
+	$('#filterVideo li').click(function(){
+		$('#filterVideo li').removeClass('active');
+		// Get video type when user click
+		var liVideo = $(this);
+		liVideo.addClass('active');
+		var typeVideo = liVideo.find('span').attr('data-type');
+		// Create a filter
+		if ( typeVideo == 'all')
+		{
+			var filteredData = $data.find('li');
+		}else{
+			var filteredData = $data.find('li[data-type=' + typeVideo + ']');
+		}
+		// finally, call quicksand
+		$applications.quicksand(filteredData, {
+		  duration: 800,
+		  //easing: 'easeInOutQuad'
+		},function() {
+			// callback code
+			// reload youtubeplugin
+			$('#youtubelist').youtubegallery();
+		});
+	});
   
 });
 

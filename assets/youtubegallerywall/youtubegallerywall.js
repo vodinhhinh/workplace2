@@ -72,11 +72,11 @@ function onYouTubeIframeAPIReady(){
 	}
 	
 	// load Youtube API code asynchronously
-	var tag = document.createElement('script')
+	//var tag = document.createElement('script')
 	
-	tag.src = "https://www.youtube.com/iframe_api";
-	var firstScriptTag = document.getElementsByTagName('script')[0]
-	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag)
+	//tag.src = "https://www.youtube.com/iframe_api";
+	//var firstScriptTag = document.getElementsByTagName('script')[0]
+	//firstScriptTag.parentNode.insertBefore(tag, firstScriptTag)
 
 	//youtubeapidfd.then(function(){
 
@@ -157,7 +157,7 @@ function onYouTubeIframeAPIReady(){
 				}
 				//liTube.find(".btnPlay").html('<i class="play fa fa-play-circle-o"></i>');
 				liTube.find('.play').on('click', function(){
-					console.log(typeof $videobox);
+					//console.log(typeof $videobox);
 					if (typeof $videobox != 'undefined'){
 						showlightbox();
 						if (typeof youtubeplayer == 'undefined'){
