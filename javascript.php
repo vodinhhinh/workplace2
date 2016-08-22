@@ -23,6 +23,9 @@
 <!-- youtube video -->
 <script type="text/javascript" charset="utf-8" src="js/jquery.tubular.1.1.js"></script>
 
+<!-- jquery-collapser-master -->
+<script src="assets/jquery-collapser-master/jquery.collapser.js"></script>
+
 <!-- custom script -->
 <script src="assets/script.js"></script>
 

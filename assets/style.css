@@ -35,8 +35,8 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 .navbar-nav > li > a{font-size: 1em;line-height: 3.6em;}
 .navbar-fixed-top{top: 5px;}
 .navbar-inverse{background: #111;}
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus{background: none;color: #E89F10;}
-
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus{background: none;color: #4cff00;}
+.navbar-inverse.intelvuebar .navbar-nav >li>a:hover {color: #2d6aff;}
 #head,.carousel{margin-top: 0;}
 
 #home{padding-top: 6em;}
@@ -174,9 +174,22 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 
 
 .img-features{
-	max-height:250px;
+	height:250px;
+	margin-bottom: 20px;
 }
 
+.description.hide-class > div{
+	position: relative;
+}
+.description.hide-class > div:after{
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 30px;
+	background: linear-gradient( rgba(255,255,255,0), #fff);
+}
 
 .carousel-overlay
 {

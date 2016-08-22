@@ -6,6 +6,20 @@ $('document').ready(function() {
 	$('#youtube-video').tubular(options);
 	// f-UGhWj1xww cool sepia hd
 	// 49SKbS7Xwf4 beautiful barn sepia
+	
+	$('.description').collapser({
+		mode: 'lines',
+		truncate: 3,
+		controlBtn: function(){
+			return $(this).parent().find( '.btn-more' );
+		},
+		showText: 'learn more',
+		hideText: 'hide text'
+	});
+		
+	
+	
+	
 	$('#youtubelist').youtubegallery();
 	
 	

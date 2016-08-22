@@ -3,7 +3,9 @@
 <div class="navbar-wrapper">
       
 
-        <div class="navbar navbar-inverse navbar-default" role="navigation" id="top-nav">
+
+		
+		 <div class="navbar navbar-inverse navbar-default intelvuebar" role="navigation" id="top-nav">
           <div class="container">
             <div class="navbar-header">
               <!-- Logo Starts -->
@@ -36,7 +38,6 @@
 
           </div>
         </div>
-
       
     </div>
 <!-- #Header Starts -->
