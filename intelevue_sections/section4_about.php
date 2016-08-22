@@ -3,8 +3,9 @@
 <div class="container">
 	<h3 class="text-center wowload fadeInUp">About</h3>
 	<div class="col-xs-9 wowload fadeInLeft">
-		<p>The great thing about video testimonials is that they really stand out and make a big impression. There’s just something about seeing a talking head and hearing an actual voice that establishes likability and trust.</p>
-		<p>The great thing about video testimonials is that they really stand out and make a big impression. There’s just something about seeing a talking head and hearing an actual voice that establishes likability and trust.</p>
+		<p>
+      Intelevue, by UCDev Solutions, leverages call center data to provide timely information to agents, supervisors, and management.
+      Intelevue goes beyond the typical wallboard solution to bring together all of your critical business information into one easily viewed and constantly available resource.</p>
 	</div>
 	<div class="col-xs-3  wowload fadeInRight" style="margin-top:-100px">
 		<img src ="./images/about2.gif" >

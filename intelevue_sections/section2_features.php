@@ -4,19 +4,11 @@
   <div class="row">
   <div class="col-sm-6 wowload fadeInLeft">
 	<div class="well clearfix">
-		<h4 class="text-center"><i class="fa fa-th-large"></i> Agent and Skill Group </h4>
-		<img class="img-responsive center-block img-features" src="./images/features/feature1.jpg">
+		<h4 class="text-center"><i class="fa fa-th-large"></i>No Professionals Needed!</h4>
+		<img class="img-responsive center-block img-features" src="./images/features/benefit2.jpg">
 		<p class="description">
-			This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-			
+      You won't need an IT pro to make changes to your Wallboard.
+      Administration happens through an easy to use web interface that is loaded with contextual help to explain every available option and feature.
 		</p>
 		<button type="button" class="btn btn-info pull-right btn-more"></button>
 
@@ -24,13 +16,11 @@
   </div>
   <div class="col-sm-6 wowload fadeInRight">
 	<div class="well clearfix">
-		<h4 class="text-center"><i class="fa fa-pie-chart"></i> Data Visualization </h4>
+		<h4 class="text-center"><i class="fa fa-pie-chart"></i>Realtime Insights</h4>
 		<img class="img-responsive center-block img-features" src="./images/features/feature2.jpg">
 		<p class="description">
-			The Wallboard currently offers 6 different ways to display
-			the skill group data of your choosing. With more than 25 ways
-			to arrange up to 6 groups of data, each with customizable fonts,
-			colors and sizes, YOU are in control of how your data is presented.	
+			Gone are the days of waiting for reports to be generated and emailed at the end of the day.
+      Gain realtime insights and important details that will allow for proactive management of your call center.
 		</p>
 		<button type="button" class="btn btn-info pull-right btn-more"></button>
 	</div>
@@ -43,38 +33,23 @@
   <div class="row">
   <div class="col-sm-6 wowload fadeInLeft">
 	<div class="well clearfix">
-		<h4 class="text-center"><i class="fa fa-th-large"></i> Custom Pages </h4>
-	<img class="img-responsive center-block img-features" src="./images/features/feature3.jpg">
+		<h4 class="text-center"><i class="fa fa-th-large"></i>Display YOUR Business Data</h4>
+	<img class="img-responsive center-block img-features" src="./images/features/benefit3.jpg">
 		<p class="description">
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-			
+      In addition to the Wallboard displaying all of your call center data,
+      you can easily include almost any web accessible content of your choosing,
+      allowing you to show custom reports, weather, and more!
 		</p>
 		<button type="button" class="btn btn-info pull-right btn-more"></button>
 	</div>
   </div>
   <div class="col-sm-6 wowload fadeInRight">
 	<div class="well clearfix">
-		<h4 class="text-center"><i class="fa fa-pie-chart"></i> User Access Control </h4>
-		<img class="img-responsive center-block img-features" src="./images/features/feature4.jpg">
+		<h4 class="text-center"><i class="fa fa-pie-chart"></i>Flexibility</h4>
+		<img class="img-responsive center-block img-features" src="./images/features/benefit4.jpg">
 		<p class="description">
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-				This is some long text that will not fit in the box
-			
+      You choose which information and how you want the information displayed. 
+      Easily change colors, sizes, layouts, and branding details with the click of a mouse.
 		</p>
 		<button type="button" class="btn btn-info pull-right btn-more"></button>
 	</div>

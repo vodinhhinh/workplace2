@@ -12,6 +12,8 @@
 
 <!-- boostrap -->
 <script src="assets/bootstrap/js/bootstrap.js" type="text/javascript" ></script>
+<!-- boostrapValidator -->
+<script src="assets/bootstrapValidator.js"></script>
 
 <!-- jquery mobile -->
 <script src="assets/mobile/touchSwipe.min.js"></script>

@@ -350,4 +350,6 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 	background-size: cover;
 	color: white;
 }
-
+.contactform .input-group .form-control{
+	padding:1.5em;
+}

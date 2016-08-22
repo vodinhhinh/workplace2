@@ -4,7 +4,7 @@
 <body>
 
 <?php include "multi_header.php"; ?>
-<?php include "intelevue_sections\section1_video.php"; ?>
+<?php include "intelevue_sections\section3_demos.php"; ?>
 <?php include "footer.php"; ?>
 <?php include "javascript.php"; ?>
 </body>
