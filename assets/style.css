@@ -177,7 +177,9 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 	height:250px;
 	margin-bottom: 20px;
 }
-
+.btn-more{
+	display: none;
+}
 .description.hide-class > div{
 	position: relative;
 }
@@ -353,3 +355,4 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 .contactform .input-group .form-control{
 	padding:1.5em;
 }
+.message{ display: none;}

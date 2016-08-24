@@ -13,7 +13,7 @@
 <!-- boostrap -->
 <script src="assets/bootstrap/js/bootstrap.js" type="text/javascript" ></script>
 <!-- boostrapValidator -->
-<script src="assets/bootstrapValidator.js"></script>
+<script src="assets/bootstrapValidator1.js"></script>
 
 <!-- jquery mobile -->
 <script src="assets/mobile/touchSwipe.min.js"></script>
@@ -23,13 +23,10 @@
 <script src="assets/gallery/jquery.blueimp-gallery.min.js"></script>
 
 <!-- youtube video -->
-<script type="text/javascript" charset="utf-8" src="js/jquery.tubular.1.1.js"></script>
+<script type="text/javascript" charset="utf-8" src="assets/jquery.tubular.1.1.js"></script>
 
 <!-- jquery-collapser-master -->
 <script src="assets/jquery-collapser-master/jquery.collapser.js"></script>
 
 <!-- custom script -->
 <script src="assets/script.js"></script>
-
-
-<script type="text/javascript" charset="utf-8" src="js/indextest.js"></script>
