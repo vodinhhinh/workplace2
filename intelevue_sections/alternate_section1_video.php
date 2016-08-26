@@ -1,24 +1,15 @@
-<?php
-$detect = new Mobile_Detect;
-if(  !$detect->isMobile() && !$detect->isTablet() ){?>
-	<div id="video-section">
-		<div id="youtube-video">
-		</div>
-	</div>
-<?php }else{?>
-	<div id="video-section">
-		<center>
-			<div style="overflow:hidden;height:270px;width:480px;max-width:100%;max-height:100%;">
-				<div id="youtube_canvas" style="height:100%;width:100%;max-width:100%">
-				<iframe id="mobileYoutube" style="height:100%;width:100%;max-width:100%;border:0;" frameborder="0" src="https://www.youtube.com/embed/RwA3JAeST5E"></iframe>
-				</div><style>#youtube_canvas img{max-width:none!important;background:none!important}</style>
-			</div>
-		</center>
-	</div>
-<?php }
-?>
 
-
+<div id="video-section">
+	<div id="background-video">
+		<img src="images/backgroundvideo.png" class="wowload bounceInDown" data-wow-delay= "0.7s" width="100%" height="100%"/>
+		<div  data-wow-delay= "2s" class="carousel-overlay wowload fadeInLeft">
+			<h1>Manage your call center better with Intelevue</h1>
+			<a class="btn btn-lg btn-custom1" href="alternate_multi_features.php"></i> Explore</a>
+			
+		 </div>
+	  </div>
+	</div>
+</div>
 
 <div id="testimonials" class="container spacer">
 	<h2 class="text-center  wowload fadeInUp">Client Comments</h2>

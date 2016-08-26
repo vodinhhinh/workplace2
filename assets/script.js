@@ -15,9 +15,17 @@
 		  }
 			
      });
+	 
+	 
+	// Setup Youtube video
+	var youtubeID = 'rPmGtZAUxNs';
+	//For smartphone
+	$('#mobileYoutube').attr("src","https://www.youtube.com/embed/"+youtubeID);
+	//For desktop
 	var winHeight = $(window).height();
 	$('#youtube-video').height(winHeight -70);
-	var options = { videoId: 'rPmGtZAUxNs', start: 0 };
+	$('#background-video').height(winHeight -70);
+	var options = { videoId: youtubeID, start: 0 };
 	$('#youtube-video').tubular(options);
 	// f-UGhWj1xww cool sepia hd
 	// 49SKbS7Xwf4 beautiful barn sepia

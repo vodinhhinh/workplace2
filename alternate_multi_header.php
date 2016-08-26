@@ -9,7 +9,7 @@
           <div class="container">
             <div class="navbar-header">
               <!-- Logo Starts -->
-              <a class="navbar-brand" href="multi_index.php"><img src="images/intelevue_logo1.png" alt="logo">Intelevue</a>
+              <a class="navbar-brand" href="index.php"><img src="images/intelevue_logo1.png" alt="logo">Intelevue</a>
               <!-- #Logo Ends -->
 
 
@@ -26,11 +26,11 @@
             <!-- Nav Starts -->
             <div class="navbar-collapse  collapse">
               <ul class="nav navbar-nav navbar-right ">
-                 <li ><a href="multi_index.php">Home</a></li>
-                 <li ><a href="multi_features.php">Features</a></li>
-                 <li ><a href="multi_demos.php">Demos</a></li>
-                 <li ><a href="multi_about.php">About</a></li>
-                 <li ><a href="multi_contact.php">Contact</a></li>
+                 <li ><a href="index.php">Home</a></li>
+                 <li ><a href="alternate_multi_features.php">Features</a></li>
+                 <li ><a href="alternate_multi_demos.php">Demos</a></li>
+                 <li ><a href="alternate_multi_about.php">About</a></li>
+                 <li ><a href="alternate_multi_contact.php">Contact</a></li>
               </ul>
             </div>
             <!-- #Nav Ends -->

@@ -81,8 +81,7 @@
           
           <dl class="adress">
             <dt class="red"><strong>UCDEV Solutions</strong></dt>
-            <dd><span>Telephone:</span>+1 888 555 1111</dd>
-            <dd><span>FAX:</span>+1 888 555 1111</dd>
+            <dd><span>Telephone:</span>+1 (304) 201-4019</dd>
             <dd>E-mail: <a href="mailto:sales@ucdevsolutions.com?Subject=Intelevue Contact" class="link1">sales@ucdevsolutions.com</a></dd>
           </dl>
       </div>
