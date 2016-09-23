@@ -22,6 +22,8 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 
 .spacer{padding: 6em 0;}
 
+
+
 .btn{border:none;border-radius: 0;padding: 1em 4em;background: rgba(0,0,0,0.5);text-transform: uppercase;}
 .btn:hover,.btn:active{color: #fff;}
 .btn-default{color: #ccc;border: 1px solid #aaa;}
@@ -87,7 +89,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 
 
 /*contact*/
-.contactform textarea,.contactform input{width: 100%;padding:1em;border:1px solid #ccc;margin-bottom: 1em;border-radius: 0;outline: none;}
+.contactform input{height:50px;}
 /*contact*/
 
 
@@ -122,7 +124,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 	.grid figure.effect-chico p{font-size: 0.6em;line-height: 1.5em;}
 	
 	.carousel-overlay h1 {font: 700 1em Roboto,Arial,Helvetica;}
-	.carousel-overlay a.btn-lg {font-size: 12px;line-height: 1.5;}
+	.carousel-overlay a.btn-lg {font-size: 6px;line-height: 1;}
 }
 
 
@@ -154,6 +156,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 	.grid.team div{margin: 0;padding: 0;}
 	figure.effect-chico figcaption {padding: 1.5em;}
 	.footer{margin-top: 2em;padding-bottom: 2em;}
+	
 }
 
 
@@ -197,7 +200,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 {
 	position: absolute;
 	right: 0;
-	top: 35%;
+	
 	left: 0;
 	z-index: 1;
 	padding-top: 20px;
@@ -205,6 +208,15 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 	color: #fff;
 	text-align: center;
 	background: rgba(0,0,0,0.8);
+}
+
+.carousel-overlay.demoText
+{
+	bottom:0;
+}
+.carousel-overlay.landing
+{
+	top: 35%;
 }
 .carousel-overlay ul{
 	padding: 0;
@@ -353,6 +365,6 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 	color: white;
 }
 .contactform .input-group .form-control{
-	padding:1.5em;
+	//padding:1.5em;
 }
 .message{ display: none;}

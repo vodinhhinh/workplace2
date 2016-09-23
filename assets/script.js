@@ -1,91 +1,95 @@
- jQuery(document).ready(function($) {
- 
-    $(".scroll a,  .gototop").click(function(event){   
+jQuery(document).ready(function($) {
+
+  $(".scroll a, .gototop").click(function(event){
     event.preventDefault();
     $('html,body').animate({scrollTop:$(this.hash).offset().top}, 600,'swing');
     $(".scroll li").removeClass('active');
     $(this).parents('li').toggleClass('active');
-    });
-	
-	var pgurl = window.location.href.substr(window.location.href.lastIndexOf("/")+1);
-     $(".nav.navbar-nav li a").each(function(){		 
-          if($(this).attr("href") == pgurl || $(this).attr("href") == '' )
-		  {
-			  $(this).parent().addClass("active");
-		  }
-			
-     });
-	 
-	 
-	// Setup Youtube video
-	var youtubeID = 'rPmGtZAUxNs';
-	//For smartphone
-	$('#mobileYoutube').attr("src","https://www.youtube.com/embed/"+youtubeID);
-	//For desktop
-	var winHeight = $(window).height();
-	$('#youtube-video').height(winHeight -70);
-	$('#background-video').height(winHeight -70);
-	var options = { videoId: youtubeID, start: 0 };
-	$('#youtube-video').tubular(options);
-	// f-UGhWj1xww cool sepia hd
-	// 49SKbS7Xwf4 beautiful barn sepia
-	
-	$('.description').collapser({
-		mode: 'lines',
-		truncate: 3,
-		controlBtn: function(){
-			return $(this).parent().find( '.btn-more' );
-		},
-		showText: 'learn more',
-		hideText: 'hide text',
-		afterHide: function(){
-						var thisbtn = $(this).parent().find( '.btn-more' );
-						thisbtn.show();
-					}
-	});
-		
-	
-	
-	
-	$('#youtubelist').youtubegallery();
-	
-	
-	
-		
-		
-	// get the first collection
-	var $applications = $('#applications');
+  });
 
-	// clone applications to get a second collection
-	var $data = $applications.clone();
-
+  var pgurl = window.location.href.substr(window.location.href.lastIndexOf("/")+1);
+  $(".nav.navbar-nav li a").each(function(){
+    if($(this).attr("href") == pgurl || $(this).attr("href") == '' ) {
+      $(this).parent().addClass("active");
+    }
+  });
+  /*
+$('li.active').removeClass('active');
+console.log(window.location.pathname);
+  $('a[href="' + location.pathname + '"]').closest('li').addClass('active');*/
   
-	 // attempt to call Quicksand on every form change
-	$('#filterVideo li').click(function(){
-		$('#filterVideo li').removeClass('active');
-		// Get video type when user click
-		var liVideo = $(this);
-		liVideo.addClass('active');
-		var typeVideo = liVideo.find('span').attr('data-type');
-		// Create a filter
-		if ( typeVideo == 'all')
-		{
-			var filteredData = $data.find('li');
-		}else{
-			var filteredData = $data.find('li[data-type=' + typeVideo + ']');
-		}
-		// finally, call quicksand
-		$applications.quicksand(filteredData, {
-		  duration: 800,
-		  //easing: 'easeInOutQuad'
-		},function() {
-			// callback code
-			// reload youtubeplugin
-			$('#youtubelist').youtubegallery();
-		});
-	});
-	
-	 $('#contact_form').bootstrapValidator({
+  
+  
+  // Setup Youtube video
+  var youtubeID = 'rPmGtZAUxNs';
+  
+  //For smartphone
+  $('#mobileYoutube').attr("src","https://www.youtube.com/embed/"+youtubeID);
+  //For desktop
+  var winHeight = $(window).height();
+  $('#youtube-video').height(winHeight -70);
+  $('#background-video').height(winHeight -70);
+  var options = { videoId: youtubeID, start: 0 };
+  $('#youtube-video').tubular(options);
+  // f-UGhWj1xww cool sepia hd
+  // 49SKbS7Xwf4 beautiful barn sepia
+
+  $('.description').collapser({
+    mode: 'lines',
+    truncate: 5,
+    controlBtn: function(){
+      return $(this).parent().find( '.btn-more' );
+    },
+    showText: 'learn more',
+    hideText: 'hide text',
+    afterHide: function(){
+            var thisbtn = $(this).parent().find( '.btn-more' );
+            thisbtn.show();
+          }
+  });
+
+
+
+
+  $('#youtubelist').youtubegallery();
+
+
+
+
+
+  // get the first collection
+  var $applications = $('#applications');
+
+  // clone applications to get a second collection
+  var $data = $applications.clone();
+
+
+   // attempt to call Quicksand on every form change
+  $('#filterVideo li').click(function(){
+    $('#filterVideo li').removeClass('active');
+    // Get video type when user click
+    var liVideo = $(this);
+    liVideo.addClass('active');
+    var typeVideo = liVideo.find('span').attr('data-type');
+    // Create a filter
+    if ( typeVideo == 'all')
+    {
+      var filteredData = $data.find('li');
+    }else{
+      var filteredData = $data.find('li[data-type=' + typeVideo + ']');
+    }
+    // finally, call quicksand
+    $applications.quicksand(filteredData, {
+      duration: 800,
+      //easing: 'easeInOutQuad'
+    },function() {
+      // callback code
+      // reload youtubeplugin
+      $('#youtubelist').youtubegallery();
+    });
+  });
+
+   $('#contact_form').bootstrapValidator({
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
         feedbackIcons: {
             valid: 'glyphicon glyphicon-ok',
@@ -133,7 +137,7 @@
                         message: 'Please supply a vaild phone number with area code'
                     }
                 }
-            },            
+            },
             comment: {
                 validators: {
                       stringLength: {
@@ -148,15 +152,15 @@
                 }
             }
         })
-		.on('error.form.bv',function(e){
-			$('.message').slideUp({ opacity: "show" }, "slow"); // Do something ...
-		})
+    .on('error.form.bv',function(e){
+      $('.message').slideUp({ opacity: "show" }, "slow"); // Do something ...
+    })
         .on('success.form.bv', function(e) {
             $('.message').hide();
             $('#contact_form').data('bootstrapValidator').resetForm();
             // Prevent form submission
             e.preventDefault();
-			
+
             // Get the form instance
             var $form = $(e.target);
 
@@ -165,28 +169,28 @@
 
             // Use Ajax to submit form data
             $.post($form.attr('action'), $form.serialize(), function(result) {
-				if(result.checksuccess)
-				{
-					$('#success_message').slideDown({ opacity: "show" }, "slow"); 
-					$('#contact_form')[0].reset();
-				}else{
-					
-					$('#error_message').slideDown({ opacity: "show" }, "slow");	
-				}
-					
+        if(result.checksuccess)
+        {
+          $('#success_message').slideDown({ opacity: "show" }, "slow");
+          $('#contact_form')[0].reset();
+        }else{
+
+          $('#error_message').slideDown({ opacity: "show" }, "slow");
+        }
+
             }, 'json')
-			.fail( function(xhr, textStatus, errorThrown) {
-				$('#error_message').slideDown({ opacity: "show" }, "slow");	
-			});
-			
+      .fail( function(xhr, textStatus, errorThrown) {
+        $('#error_message').slideDown({ opacity: "show" }, "slow");
+      });
+
         });
-		
-	
-	
-	
-	
-	
-    });
+
+
+
+
+
+
+});
 
 
 
@@ -231,9 +235,9 @@ $('.carousel').swipe( {
       var valA = options.by($(a));
       var valB = options.by($(b));
       if (options.reversed) {
-        return (valA < valB) ? 1 : (valA > valB) ? -1 : 0;				
-      } else {		
-        return (valA < valB) ? -1 : (valA > valB) ? 1 : 0;	
+        return (valA < valB) ? 1 : (valA > valB) ? -1 : 0;
+      } else {
+        return (valA < valB) ? -1 : (valA > valB) ? 1 : 0;
       }
     });
     return $(arr);

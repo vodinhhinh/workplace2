@@ -7,7 +7,7 @@
 		<h4 class="text-center"><i class="fa fa-th-large"></i>No Professionals Needed!</h4>
 		<img class="img-responsive center-block img-features" src="./images/features/benefit2.jpg">
 		<p class="description">
-      You won't need an IT pro to make changes to your Wallboard.
+      You won't need an IT pro to make changes to your Intelevue.
       Administration happens through an easy to use web interface that is loaded with contextual help to explain every available option and feature.
 		</p>
 		<button type="button" class="btn btn-info pull-right btn-more"></button>
@@ -36,7 +36,7 @@
 		<h4 class="text-center"><i class="fa fa-th-large"></i>Display YOUR Business Data</h4>
 	<img class="img-responsive center-block img-features" src="./images/features/benefit3.jpg">
 		<p class="description">
-      In addition to the Wallboard displaying all of your call center data,
+      In addition to the Intelevue displaying all of your call center data,
       you can easily include almost any web accessible content of your choosing,
       allowing you to show custom reports, weather, and more!
 		</p>

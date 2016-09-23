@@ -9,7 +9,7 @@
           <div class="container">
             <div class="navbar-header">
               <!-- Logo Starts -->
-              <a class="navbar-brand" href="#home"><img src="images/intelevue_logo1.png" alt="logo">Intelevue</a>
+              <a class="navbar-brand" href="#home"><img src="images/intelevue_logo1.png" alt="logo">   Intelevue</a>
               <!-- #Logo Ends -->
 
 

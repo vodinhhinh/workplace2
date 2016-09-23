@@ -1,0 +1,21 @@
+[23-Aug-2016 11:51:30 America/New_York] PHP Notice:  Undefined index: full_name in E:\dev\intelevue\intelevue_incl\PHPMailer\sendmail.php on line 6
+[23-Aug-2016 11:51:30 America/New_York] PHP Notice:  Undefined index: company in E:\dev\intelevue\intelevue_incl\PHPMailer\sendmail.php on line 7
+[23-Aug-2016 11:51:30 America/New_York] PHP Notice:  Undefined index: email in E:\dev\intelevue\intelevue_incl\PHPMailer\sendmail.php on line 8
+[23-Aug-2016 11:51:30 America/New_York] PHP Notice:  Undefined index: phone in E:\dev\intelevue\intelevue_incl\PHPMailer\sendmail.php on line 9
+[23-Aug-2016 11:51:30 America/New_York] PHP Notice:  Undefined index: comment in E:\dev\intelevue\intelevue_incl\PHPMailer\sendmail.php on line 10
+[23-Aug-2016 11:51:51 America/New_York] PHP Notice:  Undefined index: full_name in E:\dev\intelevue\intelevue_incl\PHPMailer\sendmail.php on line 6
+[23-Aug-2016 11:51:51 America/New_York] PHP Notice:  Undefined index: company in E:\dev\intelevue\intelevue_incl\PHPMailer\sendmail.php on line 7
+[23-Aug-2016 11:51:51 America/New_York] PHP Notice:  Undefined index: email in E:\dev\intelevue\intelevue_incl\PHPMailer\sendmail.php on line 8
+[23-Aug-2016 11:51:51 America/New_York] PHP Notice:  Undefined index: phone in E:\dev\intelevue\intelevue_incl\PHPMailer\sendmail.php on line 9
+[23-Aug-2016 11:51:51 America/New_York] PHP Notice:  Undefined index: comment in E:\dev\intelevue\intelevue_incl\PHPMailer\sendmail.php on line 10
+[23-Aug-2016 11:55:54 America/New_York] PHP Notice:  Undefined index: full_name in E:\dev\intelevue\intelevue_incl\PHPMailer\sendmail.php on line 6
+[23-Aug-2016 11:55:54 America/New_York] PHP Notice:  Undefined index: company in E:\dev\intelevue\intelevue_incl\PHPMailer\sendmail.php on line 7
+[23-Aug-2016 11:55:54 America/New_York] PHP Notice:  Undefined index: email in E:\dev\intelevue\intelevue_incl\PHPMailer\sendmail.php on line 8
+[23-Aug-2016 11:55:54 America/New_York] PHP Notice:  Undefined index: phone in E:\dev\intelevue\intelevue_incl\PHPMailer\sendmail.php on line 9
+[23-Aug-2016 11:55:54 America/New_York] PHP Notice:  Undefined index: comment in E:\dev\intelevue\intelevue_incl\PHPMailer\sendmail.php on line 10
+[23-Aug-2016 13:13:41 America/New_York] PHP Parse error:  syntax error, unexpected ',' in E:\dev\intelevue\intelevue_incl\PHPMailer\sendmail.php on line 11
+[23-Aug-2016 13:14:39 America/New_York] PHP Notice:  Undefined variable: username in E:\dev\intelevue\intelevue_incl\PHPMailer\sendmail.php on line 12
+[23-Aug-2016 13:21:17 America/New_York] PHP Parse error:  syntax error, unexpected '$full_name' (T_VARIABLE) in E:\dev\intelevue\intelevue_incl\PHPMailer\sendmail.php on line 6
+[23-Aug-2016 13:21:27 America/New_York] PHP Parse error:  syntax error, unexpected '$full_name' (T_VARIABLE) in E:\dev\intelevue\intelevue_incl\PHPMailer\sendmail.php on line 6
+[23-Aug-2016 13:22:36 America/New_York] PHP Parse error:  syntax error, unexpected '$full_name' (T_VARIABLE) in E:\dev\intelevue\intelevue_incl\PHPMailer\sendmail.php on line 6
+[23-Aug-2016 13:23:10 America/New_York] PHP Parse error:  syntax error, unexpected '$full_name' (T_VARIABLE) in E:\dev\intelevue\intelevue_incl\PHPMailer\sendmail.php on line 6

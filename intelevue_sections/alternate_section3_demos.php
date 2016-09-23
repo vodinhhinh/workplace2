@@ -2,20 +2,20 @@
 <!-- Slider Starts -->
 <div id="myCarousel" class="clearfix carousel slide banner-slider wowload fadeIn" data-wow-delay=" 0.5s" data-ride="carousel">   
       <div class="carousel-inner">
-        <!-- Item 1 -->
+        <!-- Item 1 
         <div class="item active">
           <img src="images/demos/1.jpg" alt="banner">
-        </div>
+        </div>-->
         <!-- #Item 1 -->
 
-        <!-- Item 2 -->
+        <!-- Item 2 
         <div class="item">
           <img src="images/demos/2.jpg" alt="banner">
-        </div>
+        </div>-->
         <!-- #Item 2 -->
 
         <!-- Item 3 -->
-        <div class="item">
+        <div class="item active">
           <img src="images/demos/3.jpg" alt="banner">
         </div>
         <!-- #Item 3 -->
@@ -32,10 +32,10 @@
         </div>
         <!-- #Item 5 -->
 		
-		<!-- Item 6 -->
+		<!-- Item 6
         <div class="item">
           <img src="images/demos/6.jpg" alt="banner">
-        </div>
+        </div> -->
         <!-- #Item 6 -->
 		
 		<!-- Item 7 -->
@@ -48,11 +48,9 @@
       <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon  glyphicon-chevron-left"></span></a>
       <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon  glyphicon-chevron-right"></span></a>
 	  
-	  <div class="carousel-overlay">
+	  <div class="carousel-overlay demoText">
 		 <h1>Let's Try The Intelevue</h1>
-		  <ul class=" ">
-			 <a class="btn btn-lg btn-custom1" href="alternate_multi_contact.php"><i class="fa fa-paper-plane-o"></i> Contact Us</a>
-          </ul>
+			<p> <a class="btn btn-lg btn-custom1" href="alternate_multi_contact.php"><i class="fa fa-paper-plane-o"></i> Contact Us</a></p>
 	  </div>
 
 	  

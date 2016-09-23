@@ -48,7 +48,7 @@
       <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon  glyphicon-chevron-left"></span></a>
       <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon  glyphicon-chevron-right"></span></a>
 	  
-	  <div class="carousel-overlay">
+	  <div class="carousel-overlay demoText">
 		 <h1>Let's Try The Intelevue</h1>
 		  <ul class=" scroll">
 			 <a class="btn btn-lg btn-custom1" href="#demosList"><i class="fa fa-paper-plane-o"></i> GO</a>
