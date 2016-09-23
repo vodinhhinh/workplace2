@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include "../head_css.php"; ?>
+<?php include "../head_css.php"; 
+//Set cookie for first time visit
+
+if (!isset($_COOKIE['firsttime_intelevue']))
+{
+   setcookie("firsttime_intelevue", "no");  
+}
+
+
+?>
 <body>
 <?php include "../alternate_multi_header.php"; ?>
 

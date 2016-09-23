@@ -1,16 +1,5 @@
 <?php include "intelevue_incl/Mobile_Detect.php"; ?>
 <?php
-//Set cookie for first time visit
-if (!isset($_COOKIE['firsttime_index']))
-{
-   setcookie("firsttime_index", "no");  
-}
-if (!isset($_COOKIE['firsttime_intelevue']))
-{
-   setcookie("firsttime_intelevue", "no");  
-}
-
-
 // find out http or https
 $protocol  = "";
 if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
